@@ -10,9 +10,9 @@ public class HelloClassLoader
         URL[] urls = {new URL("http://localhost:8000/")};
         System.out.println("load url");
         URLClassLoader loader = URLClassLoader.newInstance(urls);
-        System.out.println("loadClass Hello");
-        Class c = loader.loadClass("Hello");
-        System.out.println("newInstance Hello");
+        System.out.println("loadClass Test");
+        Class c = loader.loadClass("TestURLClassLoader");
+        System.out.println("newInstance Test");
         c.newInstance();
 
     }
